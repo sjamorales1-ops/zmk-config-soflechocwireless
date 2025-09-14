@@ -107,11 +107,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp EQUAL   &kp N1          &kp N2          &kp N3       &kp N4       &kp N5                                             &kp N6     &kp N7       &kp N8       &kp N9           &kp N0         &kp MINUS
-&kp ESC     &kp Q           &kp W           &kp F        &kp P        &kp B                                              &kp J      &kp L        &kp U        &kp Y            &kp SEMICOLON  &kp NON_US_BACKSLASH
-&kp TAB     &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHFT T  &kp G                                              &kp M      &mt RSHFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O     &kp SQT
-&caps_word  &kp Z           &kp X           &kp C        &kp D        &kp V          &tog 4        &mod_tap_2 2 RGB_TOG  &kp K      &kp H        &kp COMMA    &kp DOT          &kp FSLH       &caps_word
-                            &kp LGUI        &kp LALT     &lt 3 LCTRL  &kp BACKSPACE  &kp DELETE    &kp ENTER             &kp SPACE  &lt 2 RCTRL  &kp RALT     &kp RGUI
+&kp EQUAL   &kp N1          &kp N2          &kp N3       &kp N4       &kp N5                                  &kp N6     &kp N7       &kp N8       &kp N9           &kp N0         &kp MINUS
+&kp ESC     &kp Q           &kp W           &kp F        &kp P        &kp B                                   &kp J      &kp L        &kp U        &kp Y            &kp SEMICOLON  &kp NON_US_BACKSLASH
+&kp TAB     &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHFT T  &kp G                                   &kp M      &mt RSHFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O     &kp SQT
+&caps_word  &kp Z           &kp X           &kp C        &kp D        &kp V          &tog 4        &tog 2     &kp K      &kp H        &kp COMMA    &kp DOT          &kp FSLH       &caps_word
+                            &kp LGUI        &kp LALT     &lt 3 LCTRL  &kp BACKSPACE  &kp DELETE    &kp ENTER  &kp SPACE  &lt 2 RCTRL  &kp RALT     &kp RGUI
             >;
         };
 
