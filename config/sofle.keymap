@@ -123,10 +123,6 @@
 &kp LSHFT  &kp Z   &kp X   &kp C   &kp D   &kp V   &trans    &trans  &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH       &kp RSHFT
                    &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans
             >;
-
-            sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
-                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         Lower {
@@ -145,8 +141,6 @@
 &trans  &none           &none           &none           &none            &mkp RCLK        &trans    &trans  &kp KP_COMMA        &kp N1  &kp N2      &kp N3        &kp KP_PLUS      &trans
                         &trans          &trans          &trans           &trans           &trans    &trans  &trans              &kp N0  &kp KP_DOT  &kp KP_ENTER
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise {
@@ -164,8 +158,6 @@
 &bootloader   &kp RC(Z)        &kp RC(X)        &kp RC(C)        &kp RC(V)        &rgb_ug RGB_COLOR_HSB(172,100,50)  &trans    &trans  &trans     &trans    &trans    &trans     &trans   &bootloader
                                &trans           &trans           &trans           &trans                             &trans    &trans  &trans     &trans    &trans    &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         Media {
