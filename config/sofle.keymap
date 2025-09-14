@@ -81,7 +81,7 @@
         TypingLayer {
             bindings = <&tog 1>;
             key-positions = <1 51>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
