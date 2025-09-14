@@ -141,8 +141,6 @@
 &trans  &none           &none           &none           &none            &mkp RCLK        &trans    &trans  &kp KP_COMMA        &kp N1  &kp N2      &kp N3        &kp KP_PLUS      &trans
                         &trans          &trans          &trans           &trans           &trans    &trans  &trans              &kp N0  &kp KP_DOT  &kp KP_ENTER
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         raise {
