@@ -84,9 +84,9 @@
         };
 
         TypingLayer {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <1 50>;
-            layers = <0 4>;
+            layers = <0 3>;
         };
     };
 
