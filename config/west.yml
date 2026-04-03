@@ -5,7 +5,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v1.2
+      revision: niceview-rgb
       import: app/west.yml
   self:
     path: config
