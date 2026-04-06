@@ -108,7 +108,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LOWERTAPDANCE";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&to 2>, <&to 0>;
+            bindings = <&mo 2>, <&to 2>;
         };
     };
 
