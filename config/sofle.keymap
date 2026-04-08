@@ -247,3 +247,169 @@
         };
     };
 };
+
+/ {
+    underglow-layer {
+      compatible  = "zmk,underglow-layer";
+
+      //
+      // color definitions from QMK
+      // https://github.com/qmk/qmk_firmware/blob/master/quantum/color.h
+      //
+      #define RGB_AZURE     0x99F5FF // #99F5FF
+      #define RGB_BLACK     0x000000 // #000000
+      #define RGB_BLUE      0x0000FF // #0000FF
+      #define RGB_CHARTRSE  0x80FF00 // #80FF00
+      #define RGB_CORAL     0xFF7C4D // #FF7C4D
+      #define RGB_CYAN      0x00FFFF // #00FFFF
+      #define RGB_GOLD      0xFFD900 // #FFD900
+      #define RGB_GOLDNROD  0xD9A521 // #D9A521
+      #define RGB_GREEN     0x00FF00 // #00FF00
+      #define RGB_MAGENTA   0xFF00FF // #FF00FF
+      #define RGB_ORANGE    0xFF8000 // #FF8000
+      #define RGB_PINK      0xFF80BF // #FF80BF
+      #define RGB_PURPLE    0x7A00FF // #7A00FF
+      #define RGB_RED       0xFF0000 // #FF0000
+      #define RGB_SPRINGRN  0x00FF80 // #00FF80
+      #define RGB_TEAL      0x008080 // #008080
+      #define RGB_TURQUOIS  0x476E6A // #476E6A
+      #define RGB_WHITE     0xFFFFFF // #FFFFFF
+      #define RGB_YELLOW    0xFFFF00 // #FFFF00
+
+      //
+      // color definitions from MoErgo
+      // https://github.com/moergo-sc/zmk/blob/aca523dfce9b6447ffd19d833b791d44f1f286de/app/src/rgb_underglow.c#L259-L265
+      //
+      #define RGB_DULL_GRN  0x00ff68 // #00ff68
+      #define RGB_LILAC     0x6b1fce // #6b1fce
+
+      //
+      // underglow for the colors above
+      //
+      #define AZURE     &ug RGB_AZURE
+      #define BLACK     &ug RGB_BLACK
+      #define BLUE      &ug RGB_BLUE
+      #define CHARTRSE  &ug RGB_CHARTRSE
+      #define CORAL     &ug RGB_CORAL
+      #define CYAN      &ug RGB_CYAN
+      #define GOLD      &ug RGB_GOLD
+      #define GOLDNROD  &ug RGB_GOLDNROD
+      #define GREEN     &ug RGB_GREEN
+      #define MAGENTA   &ug RGB_MAGENTA
+      #define ORANGE    &ug RGB_ORANGE
+      #define PINK      &ug RGB_PINK
+      #define PURPLE    &ug RGB_PURPLE
+      #define RED       &ug RGB_RED
+      #define SPRINGRN  &ug RGB_SPRINGRN
+      #define TEAL      &ug RGB_TEAL
+      #define TURQUOIS  &ug RGB_TURQUOIS
+      #define WHITE     &ug RGB_WHITE
+      #define YELLOW    &ug RGB_YELLOW
+      #define ________  &ug RGB_BLACK
+      #define DULL_GRN  &ug RGB_DULL_GRN
+      #define LILAC     &ug RGB_LILAC
+
+
+      /*
+      Template {
+        bindings = <
+           ________  ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  ________
+           ________  ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  ________
+           ________  ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  ________
+           ________  ________  ________  ________  ________  ________  ________  ________  ________  ________  ________  ________  ________  ________
+                               ________  ________  ________  ________  ________  ________  ________  ________  ________  ________
+        >;
+
+        layer-id = <LAYER_Template>;
+      }; */
+
+
+      Base {
+        bindings = <
+           ________  ________  ________   ________  ________  ________                      ________  ________  ________  ________  ________  ________
+           ________  ________  ________   ________  ________  ________                      ________  ________  ________  ________  ________  ________
+           ________  MAGENTA   CYAN       GREEN     YELLOW    ________                      ________  YELLOW    GREEN     CYAN      MAGENTA   ________
+           YELLOW    ________  ________   ________  ________  ________  YELLOW    GREEN     ________  ________  ________  ________  ________  ________
+                               MAGENTA   CYAN       GREEN     ________  ________  ________  ________  GREEN     CYAN      MAGENTA 
+        >;
+
+        layer-id = <0>;
+      };
+
+    #ifdef LAYER_Typing
+      Typing {
+        bindings = <
+           TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS                      TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS
+           CYAN      ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  TURQUOIS
+           CYAN      ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  TURQUOIS
+           YELLOW    ________  ________  ________  ________  ________  YELLOW    YELLOW    ________  ________  ________  ________  ________  GREEN   
+                               MAGENTA   CYAN      GREEN     ________  ________  ________  ________  GREEN     CYAN      MAGENTA
+        >;
+
+        layer-id = <1>;
+      };
+      #endif
+
+
+      #ifdef LAYER_FNCursor
+      Cursor {
+        bindings = <
+           RED       RED       RED       RED       RED       RED                           TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS
+           ________  RED       RED       RED       RED       RED                           TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS
+           ________  ORANGE    ORANGE    ORANGE    ORANGE    GREEN                         GREEN     ________  CYAN      ________  GREEN     ________
+           ________  PINK      PINK      PINK      PINK      BLUE      BLUE      BLUE      GREEN     CYAN      CYAN      CYAN      GREEN     ________
+                               ________  ________  ________  GREEN     GREEN     GREEN     GREEN     GREEN     ________  ________
+        >;
+
+        layer-id = <3>;
+      };
+      #endif
+
+
+
+      #ifdef LAYER_Mouse
+      Mouse {
+        bindings = <
+           ________  ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  ________
+           ________  ________  GREEN     CYAN      GREEN     GREEN                         GREEN     GREEN     CYAN      GREEN     ________  ________
+           ________  GREEN     CYAN      CYAN      CYAN      GREEN                         GREEN     CYAN      CYAN      CYAN      YELLOW    ________
+           ________  GREEN     ________  ________  ________  ________  ________  ________  ________  ________  ________  ________  YELLOW    ________
+                               ________  ________  ________  YELLOW    YELLOW    ________  ________  ________  ________  ________
+        >;
+
+        layer-id = <4>;
+      };
+      #endif
+
+
+      #ifdef LAYER_Lower
+      Lower {
+        bindings = 
+           ________  ________  ________  ________  ________  ________                      TEAL      BLUE      ORANGE    ORANGE    ORANGE    BLUE    
+           ________  ORANGE    ORANGE    ORANGE    ORANGE    YELLOW                        TEAL      GREEN     GREEN     GREEN     ORANGE    BLUE    
+           ________  PINK      ________  CYAN      ________  YELLOW                        TEAL      GREEN     GREEN     GREEN     ORANGE    ________
+           ________  PINK      CYAN      CYAN      CYAN      YELLOW    ________  ________  TEAL      GREEN     GREEN     GREEN     RED       ________
+                               TURQUOIS  TURQUOIS  TURQUOIS  ________  ________  ________  TEAL      GREEN     TEAL      GREEN   
+        >;
+
+        layer-id = <2>;
+      };
+      #endif
+
+
+      #ifdef LAYER_Raise
+      Lower {
+        bindings = <
+           PURPLE    BLUE      BLUE      BLUE      BLUE      BLUE                          ________  ________  ________  ________  ________  TEAL    
+           ORANGE    PINK      PINK      PINK      PINK      ORANGE                        ________  ________  ________  ________  ________  ORANGE  
+           RED       ORANGE    ORANGE    ORANGE    ORANGE    CORAL                         ________  ________  ________  ________  ________  RED     
+           ________  SPRINGRN  SPRINGRN  SPRINGRN  SPRINGRN  TEAL      ________  ________  ________  ________  ________  ________  ________  TURQUOIS
+                               ________  ________  ________  ________  ________  ________  ________  ________  ________  ________
+        >;
+
+        layer-id = <5>;
+      };
+      #endif  
+
+      };
+   };
