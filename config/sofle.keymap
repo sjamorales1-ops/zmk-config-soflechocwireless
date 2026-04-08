@@ -326,90 +326,14 @@
 
       Base {
         bindings = <
-           ________  ________  ________   ________  ________  ________                      ________  ________  ________  ________  ________  ________
-           ________  ________  ________   ________  ________  ________                      ________  ________  ________  ________  ________  ________
-           ________  MAGENTA   CYAN       GREEN     YELLOW    ________                      ________  YELLOW    GREEN     CYAN      MAGENTA   ________
-           YELLOW    ________  ________   ________  ________  ________  YELLOW    GREEN     ________  ________  ________  ________  ________  ________
-                               MAGENTA   CYAN       GREEN     ________  ________  ________  ________  GREEN     CYAN      MAGENTA 
+          &ug ________  &ug ________  &ug ________   &ug ________  &ug ________  &ug ________                              &ug ________  &ug ________  &ug ________  &ug ________  &ug ________  &ug ________
+          &ug ________  &ug ________  &ug ________   &ug ________  &ug ________  &ug ________                              &ug ________  &ug ________  &ug ________  &ug ________  &ug ________  &ug ________
+          &ug ________  &ug MAGENTA   &ug CYAN       &ug GREEN     &ug YELLOW    &ug ________                              &ug ________  &ug YELLOW    &ug GREEN     &ug CYAN      &ug MAGENTA   &ug ________
+          &ug YELLOW    &ug ________  &ug ________   &ug ________  &ug ________  &ug ________  &ug YELLOW    &ug GREEN     &ug ________  &ug ________  &ug ________  &ug ________  &ug ________  &ug ________
+                                      &ug MAGENTA    &ug CYAN      &ug GREEN     &ug ________  &ug ________  &ug ________  &ug ________  &ug GREEN     &ug CYAN      &ug MAGENTA 
         >;
 
         layer-id = <0>;
       };
-
-    #ifdef LAYER_Typing
-      Typing {
-        bindings = <
-           TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS                      TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS
-           CYAN      ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  TURQUOIS
-           CYAN      ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  TURQUOIS
-           YELLOW    ________  ________  ________  ________  ________  YELLOW    YELLOW    ________  ________  ________  ________  ________  GREEN   
-                               MAGENTA   CYAN      GREEN     ________  ________  ________  ________  GREEN     CYAN      MAGENTA
-        >;
-
-        layer-id = <1>;
-      };
-      #endif
-
-
-      #ifdef LAYER_FNCursor
-      Cursor {
-        bindings = <
-           RED       RED       RED       RED       RED       RED                           TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS
-           ________  RED       RED       RED       RED       RED                           TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS  TURQUOIS
-           ________  ORANGE    ORANGE    ORANGE    ORANGE    GREEN                         GREEN     ________  CYAN      ________  GREEN     ________
-           ________  PINK      PINK      PINK      PINK      BLUE      BLUE      BLUE      GREEN     CYAN      CYAN      CYAN      GREEN     ________
-                               ________  ________  ________  GREEN     GREEN     GREEN     GREEN     GREEN     ________  ________
-        >;
-
-        layer-id = <3>;
-      };
-      #endif
-
-
-
-      #ifdef LAYER_Mouse
-      Mouse {
-        bindings = <
-           ________  ________  ________  ________  ________  ________                      ________  ________  ________  ________  ________  ________
-           ________  ________  GREEN     CYAN      GREEN     GREEN                         GREEN     GREEN     CYAN      GREEN     ________  ________
-           ________  GREEN     CYAN      CYAN      CYAN      GREEN                         GREEN     CYAN      CYAN      CYAN      YELLOW    ________
-           ________  GREEN     ________  ________  ________  ________  ________  ________  ________  ________  ________  ________  YELLOW    ________
-                               ________  ________  ________  YELLOW    YELLOW    ________  ________  ________  ________  ________
-        >;
-
-        layer-id = <4>;
-      };
-      #endif
-
-
-      #ifdef LAYER_Lower
-      Lower {
-        bindings = 
-           ________  ________  ________  ________  ________  ________                      TEAL      BLUE      ORANGE    ORANGE    ORANGE    BLUE    
-           ________  ORANGE    ORANGE    ORANGE    ORANGE    YELLOW                        TEAL      GREEN     GREEN     GREEN     ORANGE    BLUE    
-           ________  PINK      ________  CYAN      ________  YELLOW                        TEAL      GREEN     GREEN     GREEN     ORANGE    ________
-           ________  PINK      CYAN      CYAN      CYAN      YELLOW    ________  ________  TEAL      GREEN     GREEN     GREEN     RED       ________
-                               TURQUOIS  TURQUOIS  TURQUOIS  ________  ________  ________  TEAL      GREEN     TEAL      GREEN   
-        >;
-
-        layer-id = <2>;
-      };
-      #endif
-
-
-      #ifdef LAYER_Raise
-      Lower {
-        bindings = <
-           PURPLE    BLUE      BLUE      BLUE      BLUE      BLUE                          ________  ________  ________  ________  ________  TEAL    
-           ORANGE    PINK      PINK      PINK      PINK      ORANGE                        ________  ________  ________  ________  ________  ORANGE  
-           RED       ORANGE    ORANGE    ORANGE    ORANGE    CORAL                         ________  ________  ________  ________  ________  RED     
-           ________  SPRINGRN  SPRINGRN  SPRINGRN  SPRINGRN  TEAL      ________  ________  ________  ________  ________  ________  ________  TURQUOIS
-                               ________  ________  ________  ________  ________  ________  ________  ________  ________  ________
-        >;
-
-        layer-id = <5>;
-      };
-      #endif  
-
-      };
+    };
    };
