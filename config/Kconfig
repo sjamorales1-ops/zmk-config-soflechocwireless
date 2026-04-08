@@ -60,6 +60,6 @@ config ZMK_RGB_UNDERGLOW_AUTO_OFF_USB
 
 config EXPERIMENTAL_RGB_LAYER
     bool "Experimental per-key per-layer RGB underglow"
-    default n
+    default y
 
 endif # ZMK_RGB_UNDERGLOW
