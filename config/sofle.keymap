@@ -117,10 +117,11 @@
         CapsWord: CapsWord {
             compatible = "zmk,behavior-hold-tap";
             label = "CAPSWORD";
-            bindings = <&caps_word>, <&kp>;
+            bindings = <&kp>, <&caps_word>;
 
             #binding-cells = <2>;
             tapping-term-ms = <220>;
+            flavor = "tap-preferred";
         };
 
         Thumb_Layer: Thumb_Layer {
@@ -186,11 +187,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |        | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp EQUAL       &kp N1          &kp N2          &kp N3       &kp N4       &kp N5                                                            &kp N6     &kp N7       &kp N8       &kp N9           &kp N0         &kp MINUS
-&kp TAB         &kp Q           &kp W           &kp F        &kp P        &kp B                                                             &kp J      &kp L        &kp U        &kp Y            &kp SEMICOLON  &kp NON_US_BACKSLASH
-&kp ESCAPE      &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHFT T  &kp G                                                             &kp M      &mt RSHFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O     &kp SQT
-&lowertapdance  &kp Z           &kp X           &kp C        &kp D        &kp V          &CapsWord 0 LEFT_SHIFT    &CapsWord 0 RIGHT_SHIFT  &kp K      &kp H        &kp COMMA    &kp DOT          &kp FSLH       &mo 3
-                                &kp LGUI        &kp LALT     &lt 5 LCTRL  &kp BACKSPACE  &Thumb_Layer 2 DELETE     &kp ENTER                &kp SPACE  &lt 4 RCTRL  &kp RALT     &kp RGUI
+&kp EQUAL       &kp N1          &kp N2          &kp N3       &kp N4       &kp N5                                                                     &kp N6     &kp N7       &kp N8       &kp N9           &kp N0         &kp MINUS
+&kp TAB         &kp Q           &kp W           &kp F        &kp P        &kp B                                                                      &kp J      &kp L        &kp U        &kp Y            &kp SEMICOLON  &kp NON_US_BACKSLASH
+&kp ESCAPE      &mt LEFT_GUI A  &mt LEFT_ALT R  &mt LCTRL S  &mt LSHFT T  &kp G                                                                      &kp M      &mt RSHFT N  &mt RCTRL E  &mt RIGHT_ALT I  &mt RGUI O     &kp SQT
+&lowertapdance  &kp Z           &kp X           &kp C        &kp D        &kp V          &CapsWord LSHIFT LEFT_SHIFT    &CapsWord RSHFT RIGHT_SHIFT  &kp K      &kp H        &kp COMMA    &kp DOT          &kp FSLH       &mo 3
+                                &kp LGUI        &kp LALT     &lt 5 LCTRL  &kp BACKSPACE  &Thumb_Layer 2 DELETE          &kp ENTER                    &kp SPACE  &lt 4 RCTRL  &kp RALT     &kp RGUI
             >;
         };
 
