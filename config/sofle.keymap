@@ -225,25 +225,25 @@
             >;
         };
 
-        FN-Cursor {
-            label = "CUR-FN";
+        FNCursor {
+            label = "FN-CUR";
             bindings = <
-&trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INS           &kp LG(D)       &kp LS(TAB)                                  &kp F1        &kp F2    &kp F3        &kp F4     &kp F5     &kp F6
-&trans  &kp HOME              &kp END               &kp PG_UP         &kp PAGE_DOWN   &kp LC(X)                                    &kp F7        &kp F8    &kp F9        &kp F10    &kp F11    &kp F12
-&trans  &kp LEFT_WIN          &kp LEFT_ALT          &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LC(C)                                    &kp LC(L)     &none     &kp UP_ARROW  &none      &kp LC(F)  &none
-&trans  &kp LC(Z)             &kp LC(Y)             &kp LC(LS(G))     &kp LC(G)       &kp LC(V)     &kp BACKSPACE    &kp SPACE     &kp LC(K)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp LC(H)  &trans
-                              &trans                &select_none      &kp LC(A)       &extend_word  &extend_line     &select_word  &select_line  &none     &none         &none
+&kp LS(TAB)  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp INS           &kp LG(D)       &kp LA(TAB)                                  &kp F1        &kp F2    &kp F3        &kp F4     &kp F5     &kp F6
+&trans       &kp HOME              &kp END               &kp PG_UP         &kp PAGE_DOWN   &kp LC(X)                                    &kp F7        &kp F8    &kp F9        &kp F10    &kp F11    &kp F12
+&trans       &kp LEFT_WIN          &kp LEFT_ALT          &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LC(C)                                    &kp LC(L)     &none     &kp UP_ARROW  &none      &kp LC(F)  &none
+&trans       &kp LC(Z)             &kp LC(Y)             &kp LC(LS(G))     &kp LC(G)       &kp LC(V)     &kp BACKSPACE    &kp SPACE     &kp LC(K)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp LC(H)  &trans
+                                   &trans                &select_none      &kp LC(A)       &extend_word  &extend_line     &select_word  &select_line  &none     &none         &none
             >;
         };
 
         Mouse {
             label = "MOUSE";
             bindings = <
-&none   &none           &none           &none           &none            &none                                   &none           &none           &none           &none            &none      &none
-&trans  &none           &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP                            &none           &kp RSHFT       &kp RCTRL       &kp RALT         &kp RGUI   &none
-&trans  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                          &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &mkp LCLK  &none
-&trans  &msc SCRL_DOWN  &kp LC(X)       &kp LC(C)       &kp LC(V)        &none           &mkp MB4     &mkp MB5   &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
-                        &none           &none           &mkp MB3         &mkp LCLK       &mkp RCLK    &mkp RCLK  &mkp LCLK       &none           &none           &none
+&none   &none           &none           &none           &none            &none                               &none           &none           &none           &none            &none      &none
+&trans  &none           &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &msc SCRL_UP                        &none           &kp RSHFT       &kp RCTRL       &kp RALT         &kp RGUI   &none
+&trans  &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN                      &msc SCRL_UP    &msc SCRL_LEFT  &mmv MOVE_UP    &msc SCRL_RIGHT  &mkp LCLK  &none
+&trans  &msc SCRL_DOWN  &kp LC(X)       &kp LC(C)       &kp LC(V)        &none           &mkp MB4     &none  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mkp RCLK  &trans
+                        &none           &mkp MB5        &mkp MB3         &mkp LCLK       &mkp RCLK    &none  &none           &none           &none           &none
             >;
         };
 
