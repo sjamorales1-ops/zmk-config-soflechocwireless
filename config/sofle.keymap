@@ -120,8 +120,9 @@
             bindings = <&kp>, <&caps_word>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <150>;
         };
 
         Thumb_Layer: Thumb_Layer {
