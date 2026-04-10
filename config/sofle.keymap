@@ -120,7 +120,7 @@
             bindings = <&caps_word>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <220>;
         };
 
         Thumb_Layer: Thumb_Layer {
