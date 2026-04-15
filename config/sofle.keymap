@@ -268,6 +268,7 @@
         };
 
         Symbol {
+            label = "SYMBOL";
             bindings = <
 &kp GRAVE        &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp PERIOD                    &none              &none            &none              &none      &none      &none
 &kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp QUESTION                  &kp GRAVE          &kp DELETE       &kp LS(TAB)        &kp INS    &kp ESC    &none
