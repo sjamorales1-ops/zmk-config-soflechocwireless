@@ -270,11 +270,11 @@
         Symbol {
             label = "SYMBOL";
             bindings = <
-&kp GRAVE        &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp PERIOD                    &none              &none            &none              &none      &none      &none
-&kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp QUESTION                  &kp GRAVE          &kp DELETE       &kp LS(TAB)        &kp INS    &kp ESC    &none
-&kp HASH         &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTERISK                  &kp DOUBLE_QUOTES  &kp BACKSPACE    &kp TAB            &kp SPACE  &kp ENTER  &none
-&kp TILDE        &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH     &none    &none  &kp SQT            &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &kp RALT   &kp RWIN   &none
-                                 &none                 &none                  &none             &none         &none    &none  &none              &none            &none              &none
+&kp GRAVE        &kp LESS_THAN   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON     &kp PERIOD                            &none              &none            &none              &none      &none      &none
+&kp EXCLAMATION  &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE   &kp QUESTION                          &kp GRAVE          &kp DELETE       &kp LS(TAB)        &kp INS    &kp ESC    &none
+&kp HASH         &kp CARET       &kp EQUAL             &kp UNDER              &kp DOLLAR        &kp ASTERISK                          &kp DOUBLE_QUOTES  &kp BACKSPACE    &kp TAB            &kp SPACE  &kp ENTER  &none
+&kp TILDE        &kp LESS_THAN   &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp SLASH     &kp PERCENT      &none  &kp SQT            &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &kp RALT   &kp RWIN   &none
+                                 &kp BACKSLASH         &kp COLON              &kp PLUS          &kp AT        &kp AMPERSAND    &none  &none              &none            &none              &none
             >;
         };
 
